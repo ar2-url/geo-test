@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+
+        <meta charset="utf-8">
+        <title>Geolaction Template - language and population</title>
+        <meta name="author" content="ArturKnul">
+        <meta name="description" content="geolocation">
+        <meta name="viewport" content="width-device-width, initial-scale=1">
+
+        <link href="favicon.ico" rel="icon">
+        <link href="vendors/bootstrap/bootstrap.min.css" rel="stylesheet">
+        <link href="css/style.css" rel="stylesheet">
+
+    </head>
+
+<body>
+
+    
+    <div class="header">
+        <p>Check TIMEZONE for place of your destination</p>
+        <select id="selCountry">
+            <option value="EG">Egypt</option>
+            <option value="TH">Thailand</option>
+			<option value="AU">Australia</option>
+			<option value="CH">Switzerland</option>
+            <option value="BR">Brasil</option>
+            <option value="GB">Great Britain</option>
+			<option value="FR">France</option>
+			<option value="DE">Germany</option>
+			<option value="US">USA</option>
+		</select>
+
+		<select id="selLanguage">
+            <option value="sp">Spanish</option>
+            <option value="en">English</option>
+			<option value="fr">Francais</option>
+			<option value="de">Deutsche</option>
+		</select>
+
+		<button id="btnRun">Run</button>
+
+		<br><br>
+
+		<div id="divResults">
+			
+			<table>
+
+				<tr>
+					<td align="right">
+						TimezoneId: 
+					</td>
+					<td id="timezoneId"> <!--id coming from api description?? -->
+						
+					</td>
+
+				</tr>
+
+				<tr>
+					<td align="right">
+						Time: 
+					</td>
+					<td id="txtTime">
+						
+					</td>
+
+				</tr>
+
+				<tr>
+					<td align="right">
+						Sunrise: 
+					</td>
+					<td id="txtSunrise">
+						
+					</td>
+
+				</tr>
+
+				<tr>
+					<td align="right">
+						Sunset: 
+					</td>
+					<td id="txtSunset">
+						
+					</td>
+
+				</tr>
+
+				<tr>
+					<td align="right">
+						Area (km<sup>2</sup>): 
+					</td>
+					<td id="txtArea">
+						
+					</td>
+
+                </tr>
+                
+                <tr>
+					<td align="right">
+						Code: 
+					</td>
+					<td id="txtCode">
+						
+					</td>
+
+				</tr>
+
+
+			</table>
+
+		</div>
+    </div>
+
+    <div class="main">
+        <p>Choose other</p>
+    </div>
+
+    <div id="preloader">
+        <p>Check other</p>
+    </div>
+
+    <script type="application/javascript" src="libs/js/jquery-2.2.3.min.js"></script>
+	<script type="application/javascript" src="libs/js/script.js"></script>
+    
+    
+
+</body>
+
+</html>
