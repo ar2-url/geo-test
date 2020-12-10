@@ -5,8 +5,8 @@
 			type: 'POST',
 			dataType: 'json',
 			data: {
-				country: $('#selCountry').val(),
-				lang: $('#selLanguage').val()
+				countryName: $('#selCountry').val(),
+				countryCode: $('#selCode').val()
 			},
 			success: function(result) {
 
@@ -14,11 +14,11 @@
 
 				if (result.status.name == "ok") {
 
-					$('#txtContinent').html(result['data'][0]['continent']);
-					$('#txtCapital').html(result['data'][0]['capital']);
-					$('#txtLanguages').html(result['data'][0]['languages']);
-					$('#txtPopulation').html(result['data'][0]['population']);
-					$('#txtArea').html(result['data'][0]['areaInSqKm']);
+					$('#txtCode').html(result['data'][0]['countryCode']);
+					$('#txtCountryName').html(result['data'][0]['countryName']);
+					$('#txtTimezoneId').html(result['data'][0]['timezoneId']);
+					$('#txtSunrise').html(result['data'][0]['sunrise']);
+					$('#txtSunset').html(result['data'][0]['sunset']);
 
 				}
 			
