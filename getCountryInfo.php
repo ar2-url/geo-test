@@ -2,8 +2,8 @@
 
 	$executionStartTime = microtime(true) / 1000;
 
-	$url='http://api.geonames.org/timezone?formatted=true&lang=' . $_REQUEST['lang'] . '&country=' . $_REQUEST['country'] . '&username=flightltd&style=full';
-/* after changing url for timezone can't get results*/
+	$url='http://api.geonames.org/timezoneJSON?formatted=true&lat=47.01&lng=10.2&username=arurknul' . $_REQUEST['countryCode'] . '&countryName=' . $_REQUEST['countryName'] . '&username=arurknul';
+
 	$ch = curl_init();
 	curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
 	curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
